@@ -1,0 +1,16 @@
+<div>
+  <table style="border:2px solid" >
+  <th *ngFor= "let head of headers">{{head}} </th>
+  <tr *ngFor="let data of emp">
+  <td *ngFor="let key of tableKeys">
+    {{data[key]}}
+  </td>
+  <td>
+    <button (click)= "onDelete(data.id)">DELETE</button>
+    <button (click)= "onEdit(data.id)">EDIT</button>
+  </td>
+  </tr> 
+ </table> 
+ </div>
+ 
+ 
